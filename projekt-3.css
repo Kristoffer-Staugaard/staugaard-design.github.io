@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'salome_decoregular';
+    src:url('salome_deco-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'salomeitalic';
+    src:url('salome_italic-webfont.ttf')
+}
+
+@font-face {
+    font-family: 'Satoshi-Variable';
+    src:url('../fonts/Satoshi-Variable.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+}
+
+body {
+    background-color: #FFF8F2;
+    font-size: 16px;
+    padding: clamp(20px, 2.083vw, 40px);
+    margin: 0
+}
+
+h2 {
+    font-family: 'salomeitalic';
+    font-weight: normal;
+    font-style: normal;
+    font-size: clamp(40px, 4.167vw, 80px);
+    padding: 0em;
+    margin: 0em;
+    line-height: .9;
+}
+
+p {
+    font-family: 'Satoshi-Variable';
+    font-weight: medium;
+    font-size: clamp(14px, 1.302vw, 25px);
+    color:#242325;
+    margin: 0;
+}
+
+nav {
+    width: 14.23%;
+    height: 100vh;
+    border: #242325 solid;
+}
+
+header {
+    display: flex;
+    height: clamp(692px, 52.083vw, 1000px);
+    width: 85.76%;
+}
+
+    .header-left {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 38.69%;
+        text-align: center;
+        border: 2px solid #242325;
+        border-radius: 3.125em;
+    }
+
+        .margin {
+            margin: clamp(20px, 2.083vw, 40px);
+        }
+
+        .moving-text-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #242325;
+            height: clamp(35px, 3.958vw, 75px);
+        }
+
+        .orange-star {
+            width: clamp(18px, 1.667vw, 32px);
+            padding: 0em 0.625em;
+        }
+
+        .profile-img-wrapper {
+            padding: clamp(20px, 2.083vw, 40px);
+            width: clamp(310px, 32.917vw, 632px);
+            height: clamp(459px, 26.563vw, 510px);
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 90%;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 3.125em;
+        }
+
+    .header-right {
+        width: 47.06%;
+        height: 100%;
+        padding: 0 clamp(20px, 2.083vw, 40px);
+     }
+
+        .about-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            width: 100%;
+            border: 2px #242325 solid;
+            border-radius: 3.125em;
+            padding: clamp(20px, 2.083vw, 40px);
+
+        }
+
+            .black-star {
+                width: clamp(53px, 4.115vw, 79px);
+                margin-right: clamp(20px, 2.083vw, 40px);
+            }
+
+            .white {
+                color:#FFF8F2
+            }
+
+
+
+
+    
+
+
+
+
+
