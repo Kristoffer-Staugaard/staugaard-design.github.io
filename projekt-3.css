@@ -18,12 +18,29 @@
          font-style: normal;
 }
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    padding: clamp(20px, 2.083vw, 40px);
     background-color: #FFF8F2;
     font-size: 16px;
-    margin: 0
+    margin: 0;
+    padding: 0;
     
+}
+
+h1 {
+    font-family: 'salome_decoregular';
+    src:url('salome_deco-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+    padding: 0px;
+    margin: 0px;
+    font-size: clamp(48px, 7.813vw, 150px);
+    color: #FFF8F2;
+
 }
 
 h2 {
@@ -31,9 +48,10 @@ h2 {
     font-weight: normal;
     font-style: normal;
     font-size: clamp(40px, 4.167vw, 80px);
-    padding: 0em;
-    margin: 0em;
+    padding: 0px;
+    margin: 0px;
     line-height: .9;
+    color: #242325;
 }
 
 p {
@@ -52,7 +70,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 14.23%;
+    width: 15.72%;
     height: 95vh;
     border-left: #242325 solid;
     padding: clamp(20px, 2.083vw, 40px);
@@ -103,7 +121,8 @@ nav {
 header {
     display: flex;
     height: clamp(692px, 52.083vw, 1000px);
-    width: 85.76%;
+    width: 73.5%;
+    padding: clamp(20px, 2.083vw, 40px);
     
 }
 
@@ -111,7 +130,7 @@ header {
         display: flex;
         flex-direction: column;
         height: 100%;
-        width: 38.69%;
+        width: 45.12%;
         text-align: center;
         border: 2px solid #242325;
         border-radius: 3.125em;
@@ -149,7 +168,10 @@ header {
         }
 
     .header-right {
-        width: 47.06%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 54.13%;
         height: 100%;
         padding: 0 clamp(20px, 2.083vw, 40px);
      }
@@ -175,10 +197,119 @@ header {
                 color:#FFF8F2
             }
 
+        .scroll-button-wrapper {
+            display: flex;
+            justify-content: end;
+            width: 100%
+        }
 
+            .scroll-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: clamp(150px, 11.406vw, 219px);
+                height: clamp(150px, 11.406vw, 219px);
+                background-image: url("exports/scroll-button.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
 
+                .orange-arrow {
+                    width: clamp(37px, 2.969vw, 57px)
+                }
 
+    .transition {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        background-color: black;
+        margin: clamp(20px, 2.083vw, 40px) 0px;
+        text-align: center;
+        height: 100vh;
+        border-radius: clamp(30px, 6.250vw, 120px);
+        
+    }
+
+main {
+    display: flex;
+    width: 76%;
+    padding: clamp(20px, 2.083vw, 40px);
+    background-color: #242325;
     
+}
+
+    .project-1 {
+        background-color: #F2F3AE;
+        width: 58.51%;
+        padding: clamp(20px, 2.083vw, 40px);
+        margin-right: clamp(20px, 2.083vw, 40px);
+        border-radius: 50px;
+
+
+        
+    }
+
+    .project-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: #F3AEF2;
+        width: 38.88%;
+        padding: clamp(20px, 2.083vw, 40px);
+        border-radius: 50px;
+        overflow: hidden;
+
+    }
+
+        .project-text1 {
+            margin-bottom: clamp(20px, 2.083vw, 40px);
+            width: 86%;
+
+        }
+
+        .project-text2 {
+            margin-bottom: clamp(20px, 2.083vw, 40px);
+            width: 77%;
+        }
+
+            .margin-buttom {
+                margin-bottom: clamp(20px, 2.083vw, 40px);
+
+            }
+        
+        .project-visual {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+            .img-wrapper {
+                width: 100%;
+                overflow: hidden;
+            }
+
+                .project-img1 {
+                    width: 100%;
+                    
+                }
+
+            .project-img2 {
+                width: 100%;
+            }
+
+            .arrow-up-left {
+                width: clamp(25px, 4.167vw, 80px);
+                margin-left: clamp(20px, 2.083vw, 40px);
+
+            }
+
+            .arrow-up-right {
+                width: clamp(25px, 4.167vw, 80px);
+                margin-right: clamp(20px, 2.083vw, 40px);
+
+            }
 
 
 
