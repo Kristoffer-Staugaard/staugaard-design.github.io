@@ -245,7 +245,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 76.5%;
-    padding: clamp(20px, 2.083vw, 40px);    
+    padding: clamp(20px, 2.083vw, 40px);
 }
 
 .main {
@@ -266,16 +266,24 @@ main {
         .img-wrapper {
             width: 100%;
             overflow: hidden;
+            height: clamp(200.5px, 19.688vw, 378px);
+            height: 100%;
         }        
 
         .project-img {
-            width: 100%;
-                        
+            width: 100%;                        
         }            
 
         .arrow-up-left {
             width: clamp(25px, 4.167vw, 80px);
             margin-left: clamp(20px, 2.083vw, 40px);
+            margin-bottom: 15%;
+        }
+
+        .arrow-up-left2 {
+            width: clamp(25px, 4.167vw, 80px);
+            margin-left: clamp(20px, 2.083vw, 40px);
+            margin-bottom: 28%;
 
         }
 
@@ -289,8 +297,11 @@ main {
         background-color: #F2F3AE;
         width: 58.51%;
         padding: clamp(20px, 2.083vw, 40px);
+        padding-bottom: 0px;
         margin-right: clamp(20px, 2.083vw, 40px);
-        border-radius: 50px;   
+        border-radius: 50px;  
+        height: clamp(384px, 34.063vw, 654px);
+        overflow: hidden;
     }
 
         .project-text1 {
@@ -324,13 +335,14 @@ main {
         width: 25.33%;
         background-color: black;
         border-radius: 50px;
-        height: 500px;
+        height: clamp(384px, 34.063vw, 654px);
+
     }
 
         .arrow-up-white {
             width: clamp(25px, 4.167vw, 80px);
-            margin-right: clamp(20px, 2.083vw, 40px);
         }
+
         .contact-text {
             display: flex;
             justify-content: center;
@@ -348,7 +360,11 @@ main {
         background-color: #F2F3AE;
         width: 67.24%;
         padding: clamp(20px, 2.083vw, 40px);
+        padding-bottom: 0px;
         border-radius: 50px;   
+        height: clamp(384px, 34.063vw, 654px);
+        overflow: hidden;
+
     }
     
         .project-text3 {
@@ -378,14 +394,19 @@ main {
         background-color: #F2F3AE;
         width: 58.51%;
         padding: clamp(20px, 2.083vw, 40px);
+        padding-bottom: 0px;
         margin-top: clamp(20px, 2.083vw, 40px);
         border-radius: 50px;   
+        height: clamp(384px, 34.063vw, 654px);
+        overflow: hidden;
     }
     
         .project-text5 {
             margin-bottom: clamp(20px, 2.083vw, 40px);
             width: 86%;
         }
+
+
 
 
 
