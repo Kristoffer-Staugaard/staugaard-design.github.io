@@ -54,6 +54,17 @@ h2 {
     color: #242325;
 }
 
+h3 {
+    font-family: 'salomeitalic';
+    font-weight: normal;
+    font-style: normal;
+    font-size: clamp(30px, 2.604vw, 50px);
+    padding: 0px;
+    margin: 0px;
+    line-height: .9;
+    color: #242325;
+}
+
 p {
     font-family: 'Satoshi-Variable';
     font-weight: medium;
@@ -133,7 +144,7 @@ header {
         width: 45.12%;
         text-align: center;
         border: 2px solid #242325;
-        border-radius: 3.125em;
+        border-radius: 50px;
     }
 
         .margin {
@@ -148,23 +159,21 @@ header {
             height: clamp(35px, 3.958vw, 75px);
         }
 
-        .orange-star {
-            width: clamp(18px, 1.667vw, 32px);
-            padding: clamp(10px, 1.042vw, 20px) 0.625em;
-        }
+            .orange-star {
+                width: clamp(18px, 1.667vw, 32px);
+                padding: clamp(10px, 1.042vw, 20px) 0.625em;
+            }
 
         .profile-img-wrapper {
-            padding: clamp(20px, 2.083vw, 40px);
-            width: clamp(310px, 32.917vw, 632px);
-            height: clamp(459px, 26.563vw, 510px);
-        }
-
-        .profile-img {
+            margin: clamp(20px, 2.083vw, 40px);
             width: 100%;
-            height: 90%;
-            object-fit: cover;
-            object-position: top;
-            border-radius: 3.125em;
+            height: 100%;
+            border-radius: 50px;
+            background-image: url("exports/profile-img.jpg");
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-size: cover;
+            background-position: top;
         }
 
     .header-right {
@@ -183,7 +192,7 @@ header {
             align-items: flex-start;
             width: 100%;
             border: 2px #242325 solid;
-            border-radius: 3.125em;
+            border-radius: 50px;
             padding: clamp(20px, 2.083vw, 40px);
 
         }
@@ -234,22 +243,60 @@ header {
 
 main {
     display: flex;
-    width: 76%;
-    padding: clamp(20px, 2.083vw, 40px);
-    background-color: #242325;
-    
+    flex-direction: column;
+    width: 76.5%;
+    padding: clamp(20px, 2.083vw, 40px);    
 }
+
+.main {
+    display: flex;
+    width: 100%;
+}
+
+    .margin-buttom {
+            margin-bottom: clamp(20px, 2.083vw, 40px);
+        }
+            
+        .project-visual {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }    
+
+        .img-wrapper {
+            width: 100%;
+            overflow: hidden;
+        }        
+
+        .project-img {
+            width: 100%;
+                        
+        }            
+
+        .arrow-up-left {
+            width: clamp(25px, 4.167vw, 80px);
+            margin-left: clamp(20px, 2.083vw, 40px);
+
+        }
+
+        .arrow-up-right {
+            width: clamp(25px, 4.167vw, 80px);
+            margin-right: clamp(20px, 2.083vw, 40px);
+
+        }
 
     .project-1 {
         background-color: #F2F3AE;
         width: 58.51%;
         padding: clamp(20px, 2.083vw, 40px);
         margin-right: clamp(20px, 2.083vw, 40px);
-        border-radius: 50px;
-
-
-        
+        border-radius: 50px;   
     }
+
+        .project-text1 {
+            margin-bottom: clamp(20px, 2.083vw, 40px);
+            width: 86%;
+        }
 
     .project-2 {
         display: flex;
@@ -260,57 +307,85 @@ main {
         padding: clamp(20px, 2.083vw, 40px);
         border-radius: 50px;
         overflow: hidden;
-
     }
-
-        .project-text1 {
-            margin-bottom: clamp(20px, 2.083vw, 40px);
-            width: 86%;
-
-        }
 
         .project-text2 {
             margin-bottom: clamp(20px, 2.083vw, 40px);
             width: 77%;
         }
 
-            .margin-buttom {
-                margin-bottom: clamp(20px, 2.083vw, 40px);
+    .contact-div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: clamp(20px, 2.083vw, 40px);
+        margin-right: clamp(20px, 2.083vw, 40px);
+        padding: 20px;
+        width: 25.33%;
+        background-color: black;
+        border-radius: 50px;
+        height: 500px;
+    }
 
-            }
-        
-        .project-visual {
+        .arrow-up-white {
+            width: clamp(25px, 4.167vw, 80px);
+            margin-right: clamp(20px, 2.083vw, 40px);
+        }
+        .contact-text {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-image: url("exports/pointy.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
         }
 
-            .img-wrapper {
-                width: 100%;
-                overflow: hidden;
-            }
+    .project-3 {
+        margin-top: clamp(20px, 2.083vw, 40px);
+        background-color: #F2F3AE;
+        width: 67.24%;
+        padding: clamp(20px, 2.083vw, 40px);
+        border-radius: 50px;   
+    }
+    
+        .project-text3 {
+            margin-bottom: clamp(20px, 2.083vw, 40px);
+            width: 86%;
+        }    
 
-                .project-img1 {
-                    width: 100%;
-                    
-                }
-
-            .project-img2 {
-                width: 100%;
-            }
-
-            .arrow-up-left {
-                width: clamp(25px, 4.167vw, 80px);
-                margin-left: clamp(20px, 2.083vw, 40px);
-
-            }
-
-            .arrow-up-right {
-                width: clamp(25px, 4.167vw, 80px);
-                margin-right: clamp(20px, 2.083vw, 40px);
-
-            }
-
+    .project-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: #F3AEF2;
+        width: 38.88%;
+        padding: clamp(20px, 2.083vw, 40px);
+        margin-right: clamp(20px, 2.083vw, 40px);
+        margin-top: clamp(20px, 2.083vw, 40px);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    
+        .project-text4 {
+            margin-bottom: clamp(20px, 2.083vw, 40px);
+            width: 77%;
+        }
+    
+    .project-5 {
+        background-color: #F2F3AE;
+        width: 58.51%;
+        padding: clamp(20px, 2.083vw, 40px);
+        margin-top: clamp(20px, 2.083vw, 40px);
+        border-radius: 50px;   
+    }
+    
+        .project-text5 {
+            margin-bottom: clamp(20px, 2.083vw, 40px);
+            width: 86%;
+        }
 
 
 
