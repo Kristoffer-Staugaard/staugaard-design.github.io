@@ -61,7 +61,7 @@ p {
 }
 
 
-nav {
+.nav-front {
     position: fixed;
     right: 0%;
     top:0%;
@@ -110,7 +110,7 @@ nav {
         border-style: none;
         font-family: 'Satoshi-Variable';
         font-weight: medium;
-        font-size: clamp(14px, 1.302vw, 30px);
+        font-size: clamp(20px, 2.083vw, 40px);
         color:#FFF8F2;
         background-color: #242325;
         margin-top: 40px;
@@ -398,4 +398,97 @@ main {
 
 
 
+
+.body-dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #242325;
+    height: 100vh;
+}
+
+    .contact-nav {
+        display: flex;
+        justify-content: space-between;
+        padding: clamp(20px, 2.083vw, 40px);
+    }
+
+        .contact-logo {
+            width: clamp(200px, 20.833vw, 400px);
+        }
+
+        .contact-back {
+            display: flex;
+        }
+
+            .h3-white {
+                color: #FFF8F2;
+                margin-right: clamp(20px, 2.083vw, 40px) ;
+            }
+
+            .arrow-back {
+                width: clamp(25px, 4.167vw, 80px);
+
+            }
+
+    address {
+        display: flex;
+        justify-content: space-between;
+        padding: clamp(20px, 2.083vw, 40px);
+    }
+
+        .contact-info {
+            width: 45%;
+        }
+
+            .h2-white {
+                color: #FFF8F2;
+                
+            }
+
+            .p-white {
+                color: #FFF8F2;
+                font-family: 'Satoshi-Variable';
+                font-weight: medium;
+                font-style: normal;
+                font-size: clamp(18px, 1.302vw, 25px);
+                margin: 0;
+            }
+
+
+        .contact-form {
+            width: 50%;
+        }
+
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+        
+                .area {
+                    font-family: 'Satoshi-Variable';
+                    font-weight: medium;
+                    font-size: clamp(20px, 2.083vw, 40px);
+                    color:#868381;
+                    background-color:#242325;
+                    border-right: none;
+                    border-left: none;
+                    border-top: none;
+                    border-bottom: 2px solid #868381;
+                    margin-bottom: clamp(30px, 4.167vw, 80px);
+                    padding-bottom: clamp(10px, 1.563vw, 30px);
+                }
+
+                    #besked {
+                        height: 150px;
+                    }
+
+                .submit {
+                    font-family: 'salomeitalic';
+                    font-size: clamp(25px, 2.604vw, 50px);
+                    background-color: #FFF8F2;
+                    border: none;
+                    border-radius: 50px;
+                    padding: clamp(10px, 1.042vw, 20px) 0px;
+                }
 
