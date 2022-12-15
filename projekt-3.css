@@ -119,7 +119,7 @@ p {
     }
 header {
     display: flex;
-    height: clamp(692px, 52.083vw, 1000px);
+    height: 93vh;
     width: 73.5%;
     padding: clamp(20px, 2.083vw, 40px);
     
@@ -144,7 +144,7 @@ header {
             align-items: center;
             justify-content: center;
             background-color: #242325;
-            height: clamp(35px, 3.958vw, 75px);
+            height: clamp(50px, 3.958vw, 75px);
         }
 
             .orange-star {
@@ -154,7 +154,7 @@ header {
 
         .profile-img-wrapper {
             margin: clamp(20px, 2.083vw, 40px);
-            width: 100%;
+            width: 87%;
             height: 100%;
             border-radius: 50px;
             background-image: url("exports/profile-img.jpg");
@@ -197,7 +197,7 @@ header {
         .scroll-button-wrapper {
             display: flex;
             justify-content: end;
-            width: 100%
+            width: 112%
         }
 
             .scroll-button {
@@ -226,6 +226,7 @@ header {
         text-align: center;
         height: 100vh;
         border-radius: clamp(30px, 6.250vw, 120px);
+        width: 105%;
         
     }
 
@@ -414,7 +415,7 @@ main {
     }
 
         .contact-logo {
-            width: clamp(200px, 20.833vw, 400px);
+            width: clamp(200px, 15.625vw, 300px);
         }
 
         .contact-back {
@@ -457,7 +458,7 @@ main {
 
 
         .contact-form {
-            width: 50%;
+            width: 45%;
         }
 
             form {
@@ -492,3 +493,159 @@ main {
                     padding: clamp(10px, 1.042vw, 20px) 0px;
                 }
 
+
+
+
+
+@media only screen and (max-width: 991px) {
+
+    body {
+        width: 96%;
+    }
+
+    h2 {
+        font-family: 'salomeitalic';
+        font-weight: normal;
+        font-style: normal;
+        font-size: clamp(50px, 5.208vw, 100px);
+        padding: 0px;
+        margin: 0px;
+        line-height: 1.1;
+        color: #242325;
+    }
+
+    .p2 {
+        font-family: 'Satoshi-Variable';
+        font-weight: medium;
+        font-size: clamp(16px, 1.094vw, 21px);
+        color:#242325;
+        margin: 0;
+    }
+
+    .nav-front {
+        position: sticky;
+        right: auto;
+        top: auto;
+        bottom:auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        border-left: none;
+        padding: clamp(20px, 2.083vw, 40px);
+    }
+    
+        .top-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: row;
+            background-color: #242325;
+            border-radius: 50px;
+        }
+    
+            .nav-logo {
+            height: 70px;
+            width: auto;
+            margin-bottom: 0;
+            }
+    
+            .nav-top {
+            display: none;
+            margin-bottom: 40px;
+            }
+    
+            a {
+                font-family: 'Satoshi-Variable';
+                font-weight: medium;
+                font-size: clamp(18px, 1.302vw, 25px);
+                color:#FFF8F2;
+                margin-bottom: 0;
+                text-decoration: none;
+                background-color:#242325;
+                padding: 20px;
+                border-radius: 50px;
+            }
+        
+        .contact-wrapper {
+            display: none;
+        }
+
+    header {
+    width: 100%;
+    height: 80vh;
+    }
+
+        .profile-img-wrapper {
+            width: 90%;
+        }
+
+        .about-wrapper {
+            width: 95%;
+        }
+
+        .scroll-button-wrapper {
+            display: flex;
+            justify-content: end;
+            width: 104%
+        }
+    
+     main {
+        width: 100%;
+    }
+
+        .project-1 {
+            height: 455px;
+        }
+
+        .project-3 {
+            height: 455px;
+        }
+
+        .project-5 {
+            height: 455px;
+        }
+
+        .contact-div {
+            height: 435px;
+        }
+
+        .arrow-up-left {
+            margin-bottom: 17%;
+        }
+
+}
+
+    @media screen and (max-width: 479px) {
+
+        body {
+            background-color: aqua;
+        }
+
+        h2 {
+            font-family: 'salomeitalic';
+            font-weight: normal;
+            font-style: normal;
+            font-size: clamp(50px, 13.021vw, 250px);
+            padding: 0px;
+            margin: 0px;
+            line-height: 1.1;
+            color: #242325;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            height: 100%
+        }
+
+            .header-left {
+                width: 100%;
+                height: 100vh;
+            }
+    }
