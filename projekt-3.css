@@ -226,8 +226,7 @@ header {
         text-align: center;
         height: 100vh;
         border-radius: clamp(30px, 6.250vw, 120px);
-        width: 105%;
-        
+        width: 100%; 
     }
 
 main {
@@ -325,7 +324,6 @@ main {
         background-color: black;
         border-radius: 50px;
         height: clamp(354px, 34.740vw, 667px);
-
     }
 
         .arrow-up-white {
@@ -507,19 +505,26 @@ main {
         font-family: 'salomeitalic';
         font-weight: normal;
         font-style: normal;
-        font-size: clamp(50px, 5.208vw, 100px);
+        font-size: clamp(25px, 5.208vw, 90px);
         padding: 0px;
         margin: 0px;
         line-height: 1.1;
         color: #242325;
     }
 
+    .black-star {
+        display: none;
+        width: clamp(30px, 2.083vw, 40px);
+    }
+
+    p {
+        font-size: clamp(15px, 1.354vw, 26px);
+    }
+
     .p2 {
-        font-family: 'Satoshi-Variable';
         font-weight: medium;
-        font-size: clamp(16px, 1.094vw, 21px);
+        font-size: clamp(14px, 1.094vw, 21px);
         color:#242325;
-        margin: 0;
     }
 
     .nav-front {
@@ -530,7 +535,7 @@ main {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 100%;
+        width: 104%;
         height: 100%;
         border-left: none;
         padding: clamp(20px, 2.083vw, 40px);
@@ -550,20 +555,20 @@ main {
         }
     
             .nav-logo {
-            height: 70px;
+            height: 50px;
             width: auto;
             margin-bottom: 0;
             }
     
             .nav-top {
             display: none;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             }
     
             a {
                 font-family: 'Satoshi-Variable';
                 font-weight: medium;
-                font-size: clamp(18px, 1.302vw, 25px);
+                font-size: clamp(14px, 1.302vw, 25px);
                 color:#FFF8F2;
                 margin-bottom: 0;
                 text-decoration: none;
@@ -577,7 +582,7 @@ main {
         }
 
     header {
-    width: 100%;
+    width: 104%;
     height: 80vh;
     }
 
@@ -595,12 +600,16 @@ main {
             width: 104%
         }
     
+    .transition {
+        width: 109%;
+    }
+
      main {
-        width: 100%;
+        width: 104%;
     }
 
         .project-1 {
-            height: 455px;
+            height: 100%;
         }
 
         .project-3 {
@@ -618,27 +627,42 @@ main {
         .arrow-up-left {
             margin-bottom: 17%;
         }
+    }
 
-}
+    @media only screen and (max-width: 479px) {
 
-    @media screen and (max-width: 479px) {
-
-        body {
-            background-color: aqua;
-        }
+    body {
+        width: 100%;
+    }
 
         h2 {
             font-family: 'salomeitalic';
             font-weight: normal;
             font-style: normal;
-            font-size: clamp(50px, 13.021vw, 250px);
+            font-size: clamp(30px, 13.021vw, 250px);
             padding: 0px;
             margin: 0px;
             line-height: 1.1;
             color: #242325;
         }
 
+        .top-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+        .nav-logo {
+            display: none;
+        }
+
         header {
+            width: 100%;
             display: flex;
             flex-direction: column;
             height: 100%
@@ -646,6 +670,63 @@ main {
 
             .header-left {
                 width: 100%;
-                height: 100vh;
+                height: 95vh;
             }
+
+            .header-right {
+                width: 86%;
+                margin-top: 20px;
+            }
+
+            .scroll-button-wrapper{
+                display: none;
+            }
+
+            .transition {
+                width: 117%;
+            }
+
+            .main {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .project-1 {
+                width: 91%;
+            }
+
+            .project-2 {
+                width: 91%;
+                margin-top: 20px;
+            }
+
+            .project-3 {
+                width: 91%;
+                margin-top: 20px;
+            }
+
+            .project-4 {
+                width: 91%;
+                margin-top: 20px;
+            }
+
+            .project-5 {
+                width: 91%;
+                margin-top: 20px;
+            }
+
+            .contact-div {
+                display: none;
+            }
+
+            .body-dark {
+                background-color: #F2F3AE;
+            }
+    address {
+        display: flex;
+        flex-direction: column;
+
     }
+    
+    }
+
