@@ -58,6 +58,7 @@ p {
     margin: 0;
 }
 
+/* NAVIGATION */
 
 .nav-front {
     position: fixed;
@@ -110,9 +111,10 @@ p {
         color:#FFF8F2;
         background-color: #242325;
         margin-top: 40px;
-        
-
     }
+
+/* HEADER */
+
 header {
     display: flex;
     height: 93vh;
@@ -211,19 +213,23 @@ header {
                     width: clamp(37px, 2.969vw, 57px)
                 }
 
-    .transition {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-        background-color: black;
-        margin: clamp(20px, 2.083vw, 40px) 0px;
-        text-align: center;
-        height: 100vh;
-        border-radius: clamp(30px, 6.250vw, 120px);
-        width: 100%; 
+/* PROJEKTER DISPLAY HEADING */
+
+.transition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+    margin: clamp(20px, 2.083vw, 40px) 0px;
+    text-align: center;
+    height: 100vh;
+    border-radius: clamp(30px, 6.250vw, 120px);
+    width: 100%; 
     }
+
+/* PROJEKTER */
 
 main {
     display: flex;
@@ -389,10 +395,7 @@ main {
             width: 86%;
         }
 
-
-
-
-
+/* KONTAKT SIDE */
 
 .body-dark {
     display: flex;
@@ -485,9 +488,7 @@ main {
                     padding: clamp(10px, 1.042vw, 20px) 0px;
                 }
 
-
-
-
+/* TABLET BREAKPOINT */
 
 @media only screen and (max-width: 991px) {
 
@@ -519,6 +520,8 @@ main {
         font-size: clamp(14px, 1.094vw, 21px);
         color:#242325;
     }
+
+    /* NAVIGATION */
 
     .nav-front {
         position: sticky;
@@ -573,6 +576,8 @@ main {
             display: none;
         }
 
+    /* HEADER */
+
     header {
     width: 104%;
     height: 80vh;
@@ -592,9 +597,13 @@ main {
             width: 104%
         }
     
+    /* DISPLAY HEADING */    
+
     .transition {
         width: 109%;
     }
+
+    /* PROJEKTER */
 
      main {
         width: 104%;
@@ -621,6 +630,8 @@ main {
         }
     }
 
+    /* MOBILE BREAKPOINT */
+
     @media only screen and (max-width: 479px) {
 
     body {
@@ -638,6 +649,8 @@ main {
             color: #242325;
         }
 
+        /* NAVIGATION */
+
         .top-wrapper {
             display: flex;
             justify-content: center;
@@ -652,6 +665,8 @@ main {
         .nav-logo {
             display: none;
         }
+
+        /* HEADER */
 
         header {
             width: 100%;
@@ -714,10 +729,12 @@ main {
             .body-dark {
                 background-color: #F2F3AE;
             }
+
+    /* KONTAKT SIDE */
+
     address {
         display: flex;
         flex-direction: column;
-
     }
     
     }
